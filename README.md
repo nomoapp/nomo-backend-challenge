@@ -192,25 +192,6 @@ tasks (id, title, description, status, priority, user_id, created_at, updated_at
 - **SQL Injection Prevention** - Queries parametrizadas
 - **Input Validation** - Validación de datos de entrada
 
-## 🚀 Despliegue en Producción
-
-### Con Docker Compose
-```bash
-# Construir y ejecutar en modo producción
-docker-compose --profile production up -d
-
-# Ver logs
-docker-compose logs -f api
-```
-
-### Variables de Entorno de Producción
-```env
-NODE_ENV=production
-JWT_SECRET=your-super-secret-jwt-key
-DB_HOST=your-production-db-host
-DB_PASSWORD=your-secure-password
-```
-
 ## 📈 Monitoreo y Performance
 
 ### Queries de Análisis Disponibles
