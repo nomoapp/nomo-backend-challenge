@@ -49,8 +49,8 @@ const deleteTask = async (req: Request, res: Response) => {
   try {
     const { id } = req.params;
 
-    const taskTobeDeleted = await tasksRepository.getTaskById({ id });
-    if (!taskTobeDeleted || taskTobeDeleted.length === 0) {
+    const taskToBeDeleted = await tasksRepository.getTaskById({ id });
+    if (!taskToBeDeleted) {
       return res.status(404).json({ error: 'Task not found' });
     }
     

@@ -20,7 +20,7 @@ const getTaskById = async ({ id }: { id: string }) => {
     'SELECT * FROM tasks WHERE id = $1',
     [id]
   )
-  return result.rows[0]
+  return result.rows.length ? result.rows[0] : null
 }
 
 const getUserTasks = async ({ userId }: { userId: string }) => {
