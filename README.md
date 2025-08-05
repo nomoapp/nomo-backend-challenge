@@ -46,7 +46,7 @@ npm install
 
 3. **Iniciar servicios de base de datos**
 ```bash
-docker-compose up -d postgres
+npm run dev_infra:up
 ```
 
 4. **Poblar la base de datos**
