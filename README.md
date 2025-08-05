@@ -11,6 +11,7 @@ Error en el acceso a req.query.details sin verificación adecuada
 Requisitos:
 - name (requerido, min 2 chars)
 - email (requerido, formato válido)
+Pista: RegEx para validar email `/^[^\s@]+@[^\s@]+\.[^\s@]+$/`
 
 ### Reto 3 - Fix del bug en getUserTasks
 Pista: Hay un problema en la SQL
