@@ -35,7 +35,7 @@ Pista: Necesitamos saber si la tarea existe y en caso de que exista, se ha de ac
 
 1. **Clonar el repositorio**
 ```bash
-git clone <repository-url>
+git clone https://github.com/nomoapp/nomo-backend-challenge
 cd nomo-backend-challenge
 ```
 
