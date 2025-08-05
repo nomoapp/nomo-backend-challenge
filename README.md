@@ -83,6 +83,9 @@ task-management-api/
 - `npm run dev` - Servidor de desarrollo con hot-reload
 - `npm run build` - Compilar TypeScript
 - `npm run seed` - Poblar base de datos con datos de prueba
+- `npm run dev_infra:up` - Inicializa el contenedor con la base de datos de pruebas
+- `npm run dev_infra:down` - Detiene el contenedor de la base de datos de pruebas y elimina su volumen de almacenamiento
+- `npm run dev_infra:restart` - Primero detiene el contenedor y luego lo reinicia desde cero, incluyendo el volumen de almacenamiento
 
 ## 🐳 Servicios Docker
 
