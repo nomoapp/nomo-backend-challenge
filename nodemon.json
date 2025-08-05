@@ -1,0 +1,12 @@
+{
+  "watch": [
+    "src"
+  ],
+  "ignore": [
+    "src/**/*.test.ts",
+    "node_modules"
+  ],
+  "ext": "ts,mjs,js,json",
+  "exec": "npm run build && node -r tsconfig-paths/register -r ts-node/register -r dotenv/config ./dist/index.js dotenv_config_path=.env.development | pino-pretty -c -t",
+  "legacyWatch": true
+}
